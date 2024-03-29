@@ -6,6 +6,18 @@ This Express-based API serves as the backend for a simple food delivery applicat
 
 ## Getting Started
 
+## To Test the Application
+
+To test the delivery cost calculation functionality, use the following JSON request body with the `/calculate-delivery` route:
+
+```json
+{
+  "zone": "central",
+  "organizationId": 1,
+  "totalDistance": 12,
+  "itemType": "perishable"
+}
+
 ### Prerequisites
 
 Ensure you have the following installed:

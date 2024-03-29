@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
-import cors from "cors";
+import cors from 'cors';
 import organizationRoutes from './routes/organizationRoutes.js';
 import deliveryRoutes from './routes/deliveryRoutes.js';
 import { options as swaggerOptions } from './swaggerOptions.js';

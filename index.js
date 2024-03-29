@@ -8,7 +8,12 @@ import deliveryRoutes from './routes/deliveryRoutes.js';
 import { options as swaggerOptions } from './swaggerOptions.js';
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow common methods
+  allowedHeaders: ['Content-Type', 'Authorization'] // Allow common headers
+}));
+
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
